@@ -8,11 +8,11 @@
   src: url(Virgo\ Delight.ttf) format("truetype");
 } */
 
-/* Ordinateur et format paysage */
-
 header {
   padding: 60px 0 60px 0;
 }
+
+/* Ordinateur et format paysage */
 
 @media only screen and (min-width: 1360px) {
   body {
@@ -662,3 +662,6 @@ ul {
     transform: translateY(-15px);
   }
 }
+
+
+
