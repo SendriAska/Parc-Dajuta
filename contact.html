@@ -6,67 +6,70 @@
     <title>Page de contact</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-
     <header>
-        <img id="banner" src="css/lake-5519047_1280.png" alt="photo bannière">
-        <nav>
-          <ul>
-            <li><a href="main.html">Accueil</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Galerie</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+      <img id="banner" src="css/lake-5519047_1280.png" alt="photo bannière" />
+      <nav>
+        <ul>
+          <li><a href="main.html">Accueil</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <h1>Contactez-nous !</h1>
+    <h1 id="title">Contactez-nous !</h1>
+    <main id="contactMain">
+      <img src="" alt="mascotte" />
+      <form action="post">
+        <fieldset class="formulaireContact">
+          <!-- <legend>Formulaire</legend> -->
 
-    <form action="post"></form>
-
-    <fieldset class="formulaireContact">
-      <!-- <legend>Formulaire</legend> -->
-
-      <label for="nom">Nom:<span id="asterisque">*</span></label>
-      <input type="text" id="nom" placeholder="Ex: Robert">
-      <br>
-      <label for="email">E-mail:<span id="asterisque">*</span></label>
-      <input type="email" id="email" placeholder="Ex: monMail@FAI.com">
-      <br>
-      <label for="commentaire">Laissez un commentaire:</label>
-      <br>
-      <textarea name="commentaire" id="commentaire" placeholder="Je dépose mon avis :)" rows="10" cols="70"></textarea><br>
-      <input type="checkbox" name="copieEmail" id="copieEmail" checked>
-      <label for="copieEmail">Envoyer une copie par E-mail !</label>
-      <br>
-      <input type="submit" value="Envoyer">
-      <input type="submit" value="Reset">
-
-    </fieldset>
-
-
+          <label for="nom">Nom:<span id="asterisque">*</span></label>
+          <input type="text" id="nom" placeholder="Ex: Robert" />
+          <br />
+          <label for="email">E-mail:<span id="asterisque">*</span></label>
+          <input type="email" id="email" placeholder="Ex: monMail@FAI.com" />
+          <br />
+          <label for="commentaire">Laissez un commentaire:</label>
+          <br />
+          <textarea
+            name="commentaire"
+            id="commentaire"
+            placeholder="Je dépose mon avis :)"
+          ></textarea
+          ><br />
+          <input type="checkbox" name="copieEmail" id="copieEmail" checked />
+          <label for="copieEmail">Envoyer une copie par E-mail !</label>
+          <br />
+          <input type="submit" value="Envoyer" />
+          <input type="submit" value="Reset" />
+        </fieldset>
+      </form>
+      <img src="" alt="mascotte" />
+    </main>
     <footer>
-        <nav id="leftFoot">
-            <ul>
-                <li><a href="#">Mention Légales</a></li>
-                <li><a href="#">Nous recrutons</a></li>
-            </ul>
-        </nav>
-        <nav id="rightFoot">
-            <ul>
-                <li><a href="main.html">Accueil</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav id="leftFoot">
+        <ul>
+          <li><a href="#">Mention Légales</a></li>
+          <li><a href="#">Nous recrutons</a></li>
+        </ul>
+      </nav>
+      <nav id="rightFoot">
+        <ul>
+          <li><a href="main.html">Accueil</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </footer>
-
   </body>
 </html>
