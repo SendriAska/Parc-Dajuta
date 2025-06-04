@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'HIROMISAKE';
+  src: url('../fonts/HIROMISAKE.ttf');
+}
+
+/* Ordinateur et format paysage */
+
+@media only screen and (min-width: 1360px) {
+    body {
+        background-color: blanchedalmond;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+            font-family: 'HIROMISAKE';
+            margin-bottom: 40px;
+         }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+
+            nav ul li {
+                margin-left: 10px;
+            }
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            section {
+                margin: 20px;
+                padding: 10px;
+                border: solid 1px black;
+                justify-items: center;
+                border-radius: 5px;
+                background-color: rgb(248, 220, 178);
+                box-shadow: 3px 3px 10px black;
+
+                img {
+                    margin: 10px;
+                }
+
+                div {
+                    display: flex;
+                    padding: 10px;
+                    /* width: 180px;
+                    height: auto; */
+
+                    h3 {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            section:hover {
+                background-color: rgb(255, 198, 239);
+                border: 2px solid black;
+                animation: zoomSection 1s ease infinite alternate;
+            }
+        }
+    }
+
+    #banner {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                /* color: rgb(255, 198, 239); */
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+        padding: 0px 40px 0px 40px;
+    }
+
+    #asterisque {
+        color: red;
+    }
+
+    .formulaireContact {
+        padding: 20px;
+        align-self: center;
+        background-color: white;
+        border-radius: 10px;
+        label , input , textarea {
+            margin:0px 0px 15px 0px;
+        }
+    }
+}
+
+/* Tablette et Gros Tel */
+
+@media (max-width: 1359px) and (min-width: 982px) {
+    body {
+        background-color: blanchedalmond;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+            font-family: 'HIROMISAKE';
+            margin-bottom: 40px;
+         }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+
+            nav ul li {
+                margin-left: 10px;
+            }
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            section {
+                align-content: space-between;
+                align-items: center;
+                margin: 20px;
+                padding: 10px;
+                border: solid 1px black;
+                justify-items: center;
+                border-radius: 5px;
+                background-color: rgb(248, 220, 178);
+
+                img {
+                    margin: 10px;
+                }
+
+                div {
+                    display: flex;
+                    padding: 10px;
+                    h3 {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            section:hover {
+                background-color: rgb(255, 198, 239);
+                border: 2px solid black;
+                animation: zoomSection 1s ease infinite alternate;
+            }
+        }
+    }
+
+    #banner {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                /* color: rgb(255, 198, 239); */
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+        padding: 0px 40px 0px 40px;
+    }
+
+    #asterisque {
+        color: red;
+    }
+
+    .formulaireContact {
+        padding: 20px;
+        align-self: center;
+        background-color: white;
+        border-radius: 10px;
+        label , input , textarea {
+            margin:0px 0px 15px 0px;
+        }
+    }
+}
+
+
+/* Télephone */
+
+@media (max-width: 981px) and (min-width: 0px) {
+    body {
+        background-color: blanchedalmond;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+            font-family: 'HIROMISAKE';
+            margin-bottom: 40px;
+         }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+
+            nav ul li {
+                margin-left: 10px;
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            section {
+                margin: 20px;
+                padding: 10px;
+                border: solid 1px black;
+                justify-items: center;
+                border-radius: 5px;
+                background-color: rgb(248, 220, 178);
+
+                img {
+                    height: fit-content;
+                    margin: 10px;
+                }
+
+                div {
+                    display: flex;
+                    padding: 10px;
+
+                    h3 {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            section:active {
+                background-color: rgb(255, 198, 239);
+                border: 2px solid black;
+                animation: zoomSection 1s ease infinite alternate;
+            }
+        }
+    }
+
+    #banner {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                /* color: rgb(255, 198, 239); */
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+        padding: 0px 40px 0px 40px;
+    }
+
+    #asterisque {
+        color: red;
+    }
+
+
+    .formulaireContact {
+        padding: 20px;
+        align-self: center;
+        background-color: white;
+        border-radius: 10px;
+        label , input , textarea {
+            margin:0px 0px 15px 0px;
+        }
+    }
+}
+
+
+
+@keyframes zoomSection  {
+    0% {
+        transform: (1) rotate(1deg)s;
+    }
+    100% {
+        transform: scale(1.02) rotate(-1deg) ;
+    }
+}
